@@ -24,22 +24,22 @@ Built by Collins Kipkorir Bett
 
 ## Setup
 -To clone,Run command below in you terminal
-     $ git clone https://github.com/collinsbett29/pitches.git
-     $ cd pitches
+        $ git clone https://github.com/collinsbett29/pitches.git
+        $ cd pitches
 -Create a virtual environment
-     $ python3.6 -m venv --without-pip virtual 
-     $ source virtual/bin/activate
+        $ python3.6 -m venv --without-pip virtual 
+        $ source virtual/bin/activate
 
 ## Installations
 -To intall flask,flask-Bootsrap and flask-script run the following commands
-     $ python3.6 -m pip install Flask    
-     $ python3.6 -m pip install Flask-Bootstrap
-     $ python3.6 -m pip install Flask-Script
+        $ python3.6 -m pip install Flask    
+        $ python3.6 -m pip install Flask-Bootstrap
+        $ python3.6 -m pip install Flask-Script
 
 ## Running the app 
 -To run the app enter the following commands in your terminal
-     $ chmod +x start.sh
-     $ ./start.sh
+        $ chmod +x start.sh
+        $ ./start.sh
 
 ## Licensing
 -The application is licensed under MIT license
