@@ -2,8 +2,8 @@
 Built by Collins Kipkorir Bett
 
 ## Description 
--In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?
--The pitches are organized by category
+- In life, you only have 60 seconds to impress someone. 1 minute can make or break you. How do we make sure that you use your 1 minute to actually say something meaningful?
+- The pitches are organized by category
 
 ## User Requirements
 * As a user, I would like to see the pitches other people have posted.
@@ -23,26 +23,26 @@ Built by Collins Kipkorir Bett
 * Bootstrap
 
 ## Setup
--To clone,Run command below in you terminal 
+- To clone,Run command below in you terminal 
 * $ git clone https://github.com/collinsbett29/pitches.git
 * $ cd pitches
--Create a virtual environment
+- Create a virtual environment
 * $ python3.6 -m venv --without-pip virtual 
 * $ source virtual/bin/activate
 
 ## Installations
--To intall flask,flask-Bootsrap and flask-script run the following commands
+- To intall flask,flask-Bootsrap and flask-script run the following commands
 * $ python3.6 -m pip install Flask    
 * $ python3.6 -m pip install Flask-Bootstrap
 * $ python3.6 -m pip install Flask-Script
 
 ## Running the app 
--To run the app enter the following commands in your terminal
+- To run the app enter the following commands in your terminal
 * $ chmod +x start.sh
 * $ ./start.sh
 
 ## Licensing
--The application is licensed under MIT license
+- The application is licensed under MIT license
 
         copyright © Collins Bett 2019
 
