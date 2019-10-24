@@ -9,6 +9,7 @@ def load_user(user_id):
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
+
     id = db.Column(db.Integer, primary_key = True)
     username = db.Column(db.String(255),index = True)
     email = db.Column(db.String(255),unique = True,index = True)
@@ -16,7 +17,7 @@ class User(UserMixin, db.Model):
     pitches = db.relationship('Pitch', backref = 'user', lazy = "dynamic")
     comments = db.relationship('Comment', backref = 'user', lazy = "dynamic")
     bio = db.Column(db.String(255))
-    profile_pic_path = db.Column(db.String(100))
+    profile_pic_path = db.Column(db.String())
     photoprofiles = db.relationship('PhotoProfile', backref = 'user', lazy = 'dynamic')
 
     @property
@@ -35,7 +36,9 @@ class User(UserMixin, db.Model):
 
 
 class Pitch(db.Model):
+    
     __tablename__ = 'pitches'
+
     id = db.Column(db.Integer, primary_key = True)
     title = db.Column(db.String(255))
     content = db.Column(db.String)
@@ -53,7 +56,6 @@ class Pitch(db.Model):
     def clear_pitches(cls):
         Pitch.all_pitches.clear()
 
-    # display pitches
 
     def get_pitches(id):
         pitches = Pitch.query.filter_by(category_id=id).all()
