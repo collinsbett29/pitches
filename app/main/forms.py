@@ -8,7 +8,7 @@ class UpdateProfile(FlaskForm):
 
 #Pitch Form
 class PitchForm(FlaskForm):
-    content = TextAreaField('Post Your Pitch')
+    content = TextAreaField('Post a Pitch')
     submit = SubmitField('Submit Pitch')
 
 #Comment Form
