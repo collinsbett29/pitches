@@ -1,28 +1,36 @@
-{% rxtends 'base.html %'}
-{% import 'macros.html' as macros %}
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+{% import 'bootstrap/wtf.html' as wtf %}
 
-<!-- Style Block -->
-{% block styles %}
+
+{% block styles%}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="jumbotron">
     <div class="row">
-        <div class="col-6">
-            <img src="/app/static/images.jpeg" alt="clock">
-        </div>
-        <div class="col-6">
-            <p> In life you only have 60 seconds to impress someone. One minute to make or break you. How do we make sure that you use your one minute to actually say something meaningful ?</p>
+        <div class="col" style="text-align: center;" >
+            <h1 style="font-style: italic;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><strong>~ BEST PITCH SITE ~</strong></h1>
+            <!-- <img src="/static/images/images.jpeg" style= "margin-right: 100%;padding-right: 100%; height:300px;">             -->
         </div>
     </div>
-<hr>
-    <h1>Categories</h1>
-    <h4>{{ macro.displayCategoryList(category) }}</h4>
-    <div class="col">
-        <h4 class="add-category" class="btn btn-warning" href="/add/category">Create a category</h4>
+    <hr>
+    
+    <div class="card booking-card" style="text-align: center;">
+            <div class="card-body">
+            <h4 style="font-style: italic;font-family: 'Times New Roman', Times, serif;" class="card-title"><strong>PITCH CATEGORIES</strong></h4>
+            <ul class="list-unstyled list-inline d-flex justify-content-between mb-0">
+                <li class="list-inline-item mr-0">
+                <button type="button" class="btn btn-outline-primary">{{ macro.displayCategoryList(category) }}</button>
+                <div></div>
+            </ul>
+            <a href="/add/category" class="btn btn-default"><button type="button" class="btn btn-outline-success ">Add a New Category</button></a>
+        
+            </div>
+        
     </div>
 </div>
 
-    {% endblock% }
+{% endblock  %}
